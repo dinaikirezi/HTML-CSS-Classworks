@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <!-- Full Name -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+
+        <!-- Show Interest -->
+        <label>Show Your Interest:</label><br>
+        <input type="radio" id="yes" name="interest" value="Yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="interest" value="No">
+        <label for="no">No</label>
+        <input type="radio" id="maybe" name="interest" value="Maybe">
+        <label for="maybe">Maybe</label>
+        <br><br>
+
+        <!-- Select Your Occupation -->
+        <label>Select Your Occupation:</label><br>
+        <input type="checkbox" id="student" name="occupation" value="Student">
+        <label for="student">Student</label>
+        <input type="checkbox" id="consultant" name="occupation" value="Consultant">
+        <label for="consultant">Consultant</label>
+        <input type="checkbox" id="programmer" name="occupation" value="Programmer">
+        <label for="programmer">Programmer</label>
+        <br><br>
+
+        <!-- Dropdown List -->
+        <label for="dropdown">Send it Now:</label><br>
+        <select id="dropdown" name="dropdown">
+            <option value="option1">Kobe</option>
+            <option value="option2">Jordan</option>
+            <option value="option3">Morant</option>
+        </select>
+        <br><br>
+
+        <!-- Comments -->
+        <label for="comments">Write Your Comments Here:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <!-- Buttons -->
+        <button type="submit">Submit</button>
+        <button type="exit" onclick="exitForm()">Exit</button>
+        <button type="reset">Clear</button>
+    </form>
+    <script>
+        function exitForm () {
+            windoe.location.href = "https://example.com"
+        }
+    </script>
+</body>
+</html>

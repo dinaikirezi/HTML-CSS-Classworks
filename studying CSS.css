@@ -1,0 +1,93 @@
+p{
+    color: chocolate;
+    direction: rtl; /*means text will be written from right to left not from left to right as usual*/
+    unicode-bidi: bidi-override;
+    text-decoration-line: line-through;
+    text-decoration-color: blueviolet;
+    background-clip: content-box;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+h4 {
+    text-shadow: 2px 10px;
+}
+
+table, th,td{
+    border-collapse: collapse;
+    color:black;
+    border: 2px groove;
+    background-color: lightcoral;
+    border-color: lightslategray; 
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+th{
+ text-align: center;
+}
+
+body{
+    background-image: url("Images & gifs/The ID.jpg");
+    background-repeat: no-repeat;
+    background-position: 370px 20px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+}
+
+
+li{
+    text-align: center;
+    display: block;
+    float: inline-start;
+}
+li a{
+   /* display: block; */
+    color: rgb(128, 8, 8);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active{
+    background-color: #04aa6d;
+}
+
+li a:hover:not(.active){
+    background-color: #555;
+    color: aquamarine;
+}
+
+div.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+div.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: cornflowerblue;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgb(0,0,0,0.2);
+    padding: 10%;
+    z-index: 1;
+}
+
+div.dropdown:hover.dropdown-content{
+display: block;
+}
+
+button{
+    background-color: blueviolet;
+}
+

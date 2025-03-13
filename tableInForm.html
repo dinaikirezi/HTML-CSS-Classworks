@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Using Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        td {
+            padding: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+       
+        nav {
+            position: fixed;
+            background-color: #808080; /* Default background color */
+            padding: 10px; /* Padding around the navbar */
+        }
+
+        /* Style for the links in the navbar */
+        nav a {
+            color: white; /* Text color */
+            font-weight: bold; /* Bold text */
+            text-decoration: none; /* Remove underline */
+            padding: 5px; /* Padding around each link */
+            display: inline-block; /* Keep links inline */
+            background-color: #808080; /* Default link background */
+            transition: background-color 0.3s; /* Smooth background transition */
+        }
+
+        /* Style for hover effect */
+        nav a:hover {
+            background-color: #808000; /* Background color when hovered */
+        }
+
+        /* Style for active/clicked effect */
+        nav a:active {
+            background-color: #AAB100; /* Background color when clicked */
+        }
+    </style>
+</head>
+<body onload="alert('Page Loaded')"> 
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
+    </nav>
+
+    <form action="submit.php" method="post">
+        <table border="1">
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td><input type="text" id="username" name="username" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female" required>
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">SUBMIT</button>
+                    <button type="reset">RESET</button>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+    <script>
+let temperature = prompt("Enter your temperature in °C:");
+if (temperature > 39) {
+    alert("You probably have COVID-19!");
+} else {
+    alert("You are Normal!");
+}
+
+    </script>
+</body>
+</html>

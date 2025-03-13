@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student image selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #student-picture {
+            width: 300px;
+            height: 400px;
+            margin-top: 20px;
+           
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exercise #2</h1>
+    <p>Select a student to see their picture:</p>
+
+    <!-- Div to Display the Selected Student Picture -->
+    <div id="student-picture">
+        <img id="myimage" src="default.jpg" alt="Students" >
+        
+    </div>
+
+    
+    
+
+<button onclick="document.getElementById('myimage').src='student1.jpeg'">
+Student 1
+</button>
+<button onclick="document.getElementById('myimage').src='student2.jpg'">
+Student 2
+</button> 
+<button onclick="document.getElementById('myimage').src='student3.jpg'">
+student 3
+</button>
+
+</body>
+</html>
